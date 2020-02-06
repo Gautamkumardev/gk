@@ -14,6 +14,7 @@ body {
 	background: #fefefe;
 	color: #353535;
 	font-family: 'gkfont';
+         font-size: 16px;
 }
 
 main {
@@ -25,6 +26,7 @@ p {
 	line-height: 28px;
 	text-align: left;
 	font-size: 16px;
+	
 }
 
 
@@ -204,6 +206,7 @@ img {
  .card {
     max-width:300px;
     min-height:300px;
+	 min-width:200px;
     margin:10px auto;
     position:relative;
     padding-bottom:0.5em;
