@@ -1,13 +1,13 @@
 @font-face {
 	font-family: gkfont;
-	src: url('Vonique 64.ttf');
+	src: url('Vonique 64.ttf;');
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	//border:1px solid red;
+	
 }
 
 body {
@@ -95,7 +95,7 @@ header {
 	transition: background-color 200ms linear;
 	line-height: 50px;
 	display: inline-block;
-	width: 140px;
+	margin:auto 15px;
 	cursor:pointer;
 }
 
@@ -169,7 +169,7 @@ li:hover > a::after  {
 }
 .intro  {
      width:100%;
-     border-top: 1px solid rgba(255, 255, 255, 0.1);
+     border-top: 1px solid #fff;
      margin-bottom:100px;
      display:flex;
      flex-wrap:wrap;
@@ -283,7 +283,8 @@ img {
   }
   .learnMore:hover 
   {
-  background:rgba(255, 255, 255, 0.2);
+
+  background-color:rgba(255, 255, 255, 0.2);
   }
   
   
