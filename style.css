@@ -24,6 +24,8 @@ main {
 p {
 	margin: 1em auto 1em 0.5em;
 	line-height: 28px;
+        min-height:1px;
+        max-height:99999px;
 	text-align: left;
 	font-size: 16px;
 	
