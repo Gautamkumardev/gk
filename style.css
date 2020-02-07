@@ -258,7 +258,7 @@ img {
     background:url("Img/HTML-5.svg") no-repeat;
  }
   .card:nth-child(2) > .crdImg::after {
-  background:url("Img/Css-3.svg") no-repeat;
+  background:url("Img/CSS-3.svg") no-repeat;
   }
   .card:nth-child(3) > .crdImg::after {
   background:url("Img/JavaScript.svg") no-repeat;
