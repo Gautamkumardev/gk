@@ -78,8 +78,8 @@ header {
 
 
 .menunav {
-	transition: clip-path 300ms ease;
-	
+	transition: clip-path 300ms linear;
+  will-change: transform;
 }
 
 .navlist {
@@ -90,7 +90,6 @@ header {
 }
 
 .navlist > li {
-	transition: background-color 200ms linear;
 	line-height: 50px;
 	display: inline-block;
 	width: 140px;
@@ -99,7 +98,9 @@ header {
 
 li > a {
    position:relative;
-   
+  max-width: min-content;
+
+  
 
 }
 li > a::after {
@@ -109,13 +110,14 @@ li > a::after {
   top:110%;
   left:0;
   height:2px;
-  width:0;
-  transition:width 200ms ease;
+  width:100%;
+  transform: scale(0);
+  transition:transform 200ms ease;
   background:#fff;
   border-radius:10px;
 }
-li:hover > a::after  {
-	width: 100%;
+li:hover > a::after  {  
+  transform: scale(1);
 }
 
 .dropDown {
@@ -377,14 +379,16 @@ footer ul li {
 	.navlist>li,
 	.navlist {
 		width: 100%;
+		position: relative;
 	}
 	.menunav {
-		max-height:0;
+	
         clip-path: circle(0.2% at 100% 0);
-        background:#9FA8DA;
+        background:rgba(255, 255, 255, 0.24);
 		overflow: hidden;
 		width: 100%;
-		
+		position: absolute;
+		top: 64px;
 		padding-top: 0;
 	}
 	.navlist li > a {
@@ -401,7 +405,7 @@ footer ul li {
 		display: inline-block;
 	}
 	#toggle:checked~.menunav {
-    max-height:370px;
+  
 	clip-path: circle(141.2% at 100% 0);
 	}
 	#toggle:checked~.togglebt>.one {
