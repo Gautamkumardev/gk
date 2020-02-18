@@ -1,7 +1,4 @@
-@font-face {
-	font-family: gkfont;
-	src: url('file:///storage/emulated/0/Thor/Font/Product%20Sans%20Regular.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Alata|M+PLUS+Rounded+1c|Sulphur+Point&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -13,7 +10,7 @@
 body {
 	background: #fefefe;
 	color: #353535;
-	font-family: 'gkfont';
+	font-family:'Sulphur Point', sans-serif;
 }
 
 main {
@@ -78,7 +75,7 @@ header {
 
 
 .menunav {
-	transition: clip-path 300ms linear;
+	transition: clip-path 600ms linear;
   will-change: transform;
 }
 
@@ -269,7 +266,7 @@ img {
   .crdContent {
      margin-top: 40px;
      padding:0.5em;
-     font-family:'gkfont';
+     font-family:'Alata',sans-serif;
      
     
   }
@@ -388,7 +385,7 @@ footer ul li {
 		overflow: hidden;
 		width: 100%;
 		position: absolute;
-		top: 64px;
+		top: 66px;
 		padding-top: 0;
 	}
 	.navlist li > a {
